@@ -1,0 +1,522 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Sans:wght@300;400;500&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Workbench&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=IBM+Plex+Sans:wght@300;400;500&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Workbench&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto','sans-serif';
+
+  scroll-behavior: smooth;
+}
+
+
+
+img {
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.main .nav-left {
+  padding-top: 30px;
+  width: 100px;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  border-right: 2px solid #000;
+  position: fixed;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-left .menu,
+.search {
+ width: 20px;
+ height: 20px;
+}
+
+.container {
+  width: 90%;
+  max-width: 1715px;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 120px;
+}
+
+header a {
+  width: 200px;
+  padding-left: 85px;
+}
+
+header button {
+  background: red;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  font-size: 20px;
+  min-width: 132px;
+  border: 2px solid red;
+  transition: all ease-in .3s;
+  cursor: pointer;
+}
+
+header button:hover {
+  background-color: transparent;
+  color: red;
+}
+
+main {
+  padding-left: 85px;
+  /* overflow: hidden; */
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.banner h1 {
+  text-transform: uppercase;
+  font-size: 13vw;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  background-image: url('/img/texture.png');
+  color: transparent;
+  background-color: #990d0d;
+  background-clip: text;
+}
+
+@keyframes dog-img-name {
+  0% {
+    transform: scale(0) rotate(-27deg);
+  }
+  100% {
+    transform: scale(100%) rotate(-27deg);
+  }
+}
+
+@keyframes bottle-name {
+  0% {
+    transform: scale(0);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(100%);
+    opacity: 1;
+  }
+}
+.banner {
+  margin-top: 100px;
+}
+
+.banner .dog-img {
+  width: 9% !important;
+  position: absolute;
+  top: -10%;
+  left: 25%;
+  z-index: 4;
+  /* animation: dog-img-name 1s linear 1s 1 backwards none; */
+  animation: dog-img-name 1s linear 0s 1 forwards;
+
+}
+
+.bottle-img {
+  position: absolute;
+  width: 32%;
+  z-index: 2;
+  left: 38%;
+  top: 50px;
+  transition: all linear .1s;
+  transform: rotate(358deg);
+  opacity: 0;
+ animation: bottle-name 2s linear 1s 1 forwards;
+}
+ /* animation: bottle-name 2s linear 1s 1 forwards; */
+  /* opacity: 0; */
+
+.india-paleale-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 300px;
+}
+
+.india-paleale {
+  flex-basis: 35%;
+}
+
+.india-paleale span {
+  font-size: 12px;
+    font-weight: 800;
+}
+
+.india-paleale h2 {
+  font-size: 140px;
+  margin-left: -10px;
+  text-transform: uppercase;
+  line-height: 0.9;
+  color: transparent;
+  background-clip: text;
+  background-image: url('./img/texture.png');
+  background-color: black;
+}
+
+.india-paleale p {
+  font-size: 10px;
+  line-height: 22px;
+  font-family: 'sans serif';
+}
+
+.abv-container .upper-title {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 3px solid #000;
+}
+
+.upper-title .abv {
+  text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.india-paleale button {
+  background: #000;
+    color: #fff;
+    border: 0;
+    padding: 8px;
+    font-size: 20px;
+    min-width: 132px;
+    border: 2px solid #000;
+    transition: all ease-in .3s;
+    cursor: pointer;
+    text-transform: capitalize;
+    margin-top: 10px;
+}
+
+.india-paleale button:hover {
+  background-color: transparent;
+  color: #000;
+}
+
+.upper-title .text {
+  font-size: 12px;
+    display: block;
+    margin-bottom: 7px;
+    margin-top: 5px;
+}
+
+.percentage {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 7px;
+}
+
+.percentage .number {
+  font-size: 40px;
+    font-weight: 700;
+    flex-basis: 28%;
+}
+
+.percentage .para {
+  font-size: 10px;
+    line-height: 13px;
+    flex-basis: 44%;
+    font-weight: 700;
+}
+
+.abv-container {
+  padding: 64px;
+    flex-basis: 23.5%;
+    box-shadow: 0 0 4px 4px #000;
+    height: 637px;
+}
+
+.mounth-section {
+  margin-top: 180px;
+  overflow: hidden;
+}
+
+.mounth-section h2 {
+  width: 85vw;
+    font-size: 18.3vw;
+    line-height: 18.5vw;
+    font-weight: 500;
+    font-family: 'Anton', sans-serif;
+    text-transform: uppercase;
+    background: url('./img/texture.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-color: rgb(177, 29, 29);
+    margin-bottom: 25px;
+}
+
+.mounth-container {
+  display: flex;
+    justify-content: space-between;
+}
+
+.mounth-container .youtube_image {
+  flex-basis: 29.5%;
+}
+
+.youtube_image p {
+  width: 23vw;
+  font-size: 1.5vw;
+  margin-top: 3vh;
+  line-height: 4vh;
+  font-family: 'sans-serif';
+  font-weight: 700;
+}
+
+.style-text {
+  flex-basis: 35.5%;
+}
+
+.style-text > p {
+  width: 25vw;
+    font-size: 0.9vmax;
+    font-family: sans-serif;
+    font-weight: 100;
+}
+
+.style-text-content h3 {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin-top: 30px;
+}
+
+.style-text-content p {
+  margin-top: 3vh;
+    font-family: sans-serif;
+    font-weight: 100;
+}
+
+.splash-conatiner {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  margin-top: 22vh;
+}
+
+.green-splash {
+  height: 90vh;
+  position: relative;
+  flex-basis: 43%;
+  margin-left: -3vw;
+}
+
+.green-splash .tropical {
+  position: relative;
+
+}
+
+.tropical-content, .pink-content {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+}
+
+.tropical-content {
+ top: 12%;
+    left: 31%;
+    text-align: center;
+}
+
+.pink-content {
+  top: 12%;
+  left: 31%;
+  text-align: center;
+}
+
+.tropical-content span {
+  font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.tropical-content p {
+  font-size: 14px;
+    font-family: serif;
+    width: 95%;
+}
+
+.tropical-content span::after {
+  content: '';
+  background-color: #000;
+  width: 66%;
+    height: 3px;
+    display: block;
+    margin: 3px auto 8px;
+}
+
+.pink-content span {
+  font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    color:#fff;
+}
+
+.pink-content p {
+  font-size: 14px;
+    font-family: serif;
+    width: 95%;
+}
+
+.pink-content span::after {
+  content: '';
+  background-color: #000;
+  width: 30%;
+    height: 3px;
+    display: block;
+    margin: 3px auto 8px;
+}
+
+.tropical-content, .pink-content p {
+  color: #fff;
+}
+
+.green-splash .tropical, .pink {
+  width: 58%;
+}
+
+.green-splash .beer-glass {
+  width: 45%;
+  transform: rotate(335deg);
+  margin-left: 2vw;
+  margin-top: 3vh;
+}
+
+.green-splash .pink {
+  position: absolute;
+  top: 30%;
+    left: 49%;
+}
+
+.black-splash {
+  flex-basis: 29%;
+  position: relative;
+}
+
+.black-splash-content {
+  position: absolute;
+  top: 12%;
+    left: 25%;
+}
+
+.black-splash-content span {
+  font-weight: 500;
+    text-transform: uppercase;
+    text-align: left;
+    color: #fff;
+    margin-bottom: 1.5vh;
+    display: block;
+    margin-left: 3vw;
+}
+
+.black-splash-content p {
+  font-size: 16px;
+    font-family: serif;
+    width: 85%;
+    color: #fff;
+    text-align: center;
+}
+
+.availability-container {
+  margin-top: 30vh;;
+}
+
+.availability-container ul {
+  display: flex;
+  align-items: flex-start;
+}
+
+.availability-container li {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  flex-basis: 20%;
+}
+
+.availability-container .image1-container {
+  align-self: flex-end;
+}
+
+.availability-container .bottles:first-of-type li {
+ flex-basis: 17%;
+}
+
+.lagunitas, .day-time, .super {
+  transform: rotate(345deg);
+  /* aspect-ratio: 3 / 2;
+  object-fit: contain; */
+}
+
+
+.chatterbox  {
+ display: flex;
+ margin-top: 20vh;
+}
+
+.chatterbox > figure {
+  flex-basis: 60%;
+}
+
+.chatterbox .recipes {
+  flex-basis: 35%;
+  margin-left: 2vw;
+}
+
+.recipes h3 {
+  text-transform: capitalize;
+    font-family: 'serif';
+    font-size: 2vmax;
+}
+
+.recipes .beer {
+  margin-top: 3vh;
+  width: 30vw;
+  font-family: 'Anton', sans-serif;
+  font-size: 4vw;
+  font-weight: 100;
+  line-height: 9.5vh;
+  letter-spacing: 0.5vw;
+  text-transform: uppercase;
+}
+
+.recipes .rnd-text {
+  margin-top: 3vh;
+    font-weight: 400;
+    font-family: 'Dosis', sans-serif;
+    color: #111;
+    
+}
+
+.recipes a {
+  margin-top: 3vh;
+  font-size: 1.2vmax;
+  padding: 0.8vmax 1.5vmax;
+  font-family: 'Anton', sans-serif;
+  text-transform: uppercase;
+  font-weight: 100;
+  color: #fff;
+  background-color: #000;
+  border-style: none;
+  cursor: pointer;
+  display: inline-block;
+}
